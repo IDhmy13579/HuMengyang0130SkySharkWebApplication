@@ -36,7 +36,7 @@ namespace HuMengyang0130SkySharkWebApplication.NA
                 lblMessage.Text = ex.Message;
             }
         }
-        //week7
+
         protected void btnUpdate_Click(object sender, EventArgs e)
         {
             try
@@ -59,3 +59,4 @@ namespace HuMengyang0130SkySharkWebApplication.NA
         }
     }
 }
+//week7

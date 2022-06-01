@@ -26,7 +26,7 @@ namespace HuMengyang0130SkySharkWebApplication
                Label2.Text = "Change password for "+Session["username"].ToString();
             }
         }
-        //week7
+
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
             try
@@ -52,3 +52,4 @@ namespace HuMengyang0130SkySharkWebApplication
         }
     }
  }
+//week7

@@ -18,7 +18,7 @@ namespace HuMengyang0130SkySharkWebApplication.NA
         {
 
         }
-        //week7
+
         protected void btnAddSubmit_Click(object sender, EventArgs e)
         {
             string username,password,role;
@@ -84,3 +84,4 @@ namespace HuMengyang0130SkySharkWebApplication.NA
         }
     }
 }
+//week7
