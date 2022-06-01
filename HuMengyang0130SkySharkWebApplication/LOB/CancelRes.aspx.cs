@@ -16,7 +16,7 @@ namespace HuMengyang0130SkySharkWebApplication.LOB
         {
 
         }
-
+        //week 9
         protected void btnCancle_Click(object sender, EventArgs e)
         {
             lblMessage.Text = "";
@@ -81,6 +81,6 @@ namespace HuMengyang0130SkySharkWebApplication.LOB
                     lblMessage.Text = ex.Message;
                 }
             }//end
-        }//end
+        }
     } 
 }

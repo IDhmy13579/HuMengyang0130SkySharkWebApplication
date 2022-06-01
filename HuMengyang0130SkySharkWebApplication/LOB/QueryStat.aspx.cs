@@ -21,7 +21,7 @@ namespace HuMengyang0130SkySharkWebApplication.LOB
         {
 
         }
-
+        //week 9
         protected void btnQueryStatus_Click(object sender, EventArgs e)
         {
             lblMessage.Text = "";
@@ -101,7 +101,7 @@ namespace HuMengyang0130SkySharkWebApplication.LOB
                 }
             }//end
         }
-
+        //week 9
         protected void btnSubmit2_Click(object sender, EventArgs e)
         {
             lblTicketStatus.Text = "";

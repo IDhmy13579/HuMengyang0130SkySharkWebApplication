@@ -17,7 +17,7 @@ namespace HuMengyang0130SkySharkWebApplication.LOB
         {
 
         }
-
+        //week 9
         protected void Wizard1_NextButtonClick1(object sender, WizardNavigationEventArgs e)
         {
             //step 1- Search Flight Details 
@@ -219,7 +219,7 @@ namespace HuMengyang0130SkySharkWebApplication.LOB
 
             }
         }
-
+        //week 9
         protected void Wizard1_FinishButtonClick(object sender, WizardNavigationEventArgs e)
         {
             if (Wizard1.WizardSteps[e.CurrentStepIndex].ID.ToString().Trim() == "WizardStep3")
