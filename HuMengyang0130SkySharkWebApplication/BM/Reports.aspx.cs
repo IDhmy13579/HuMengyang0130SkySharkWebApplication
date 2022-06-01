@@ -16,7 +16,7 @@ namespace HuMengyang0130SkySharkWebApplication.BM
         {
 
         }
-
+        //week 8
         protected void Button3_Click(object sender, EventArgs e)
         {
             String month, date, year;
@@ -42,7 +42,7 @@ namespace HuMengyang0130SkySharkWebApplication.BM
             DataGrid.DataSource = source;
             DataGrid.DataBind();
         }
-
+        //week 8
         protected void Button1_Click(object sender, EventArgs e)
         {
             String ConnectionString = ConfigurationManager.ConnectionStrings["ARPDatabaseConnectionString"].ConnectionString;

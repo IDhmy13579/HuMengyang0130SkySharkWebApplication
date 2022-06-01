@@ -21,7 +21,7 @@ namespace HuMengyang0130SkySharkWebApplication.BM
         {
 
         }
-
+        //week 8
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
             //get conntion -use your connection string name -ARPDatabaseConnectionString
