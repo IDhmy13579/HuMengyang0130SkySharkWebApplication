@@ -42,7 +42,7 @@
                     <td class="auto-style1"></td>
                 </tr>
                 <tr>
-                    
+                    //week 7
                     <td colspan="2" class="auto-style1">
                         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/ChangePassword.aspx">Changed Password</asp:HyperLink>
                     </td>
