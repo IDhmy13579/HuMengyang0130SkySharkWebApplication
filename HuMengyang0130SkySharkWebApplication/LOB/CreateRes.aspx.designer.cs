@@ -87,6 +87,15 @@ namespace HuMengyang0130SkySharkWebApplication.LOB
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
+        /// lblMessageStep1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMessageStep1;
+
+        /// <summary>
         /// Label2 control.
         /// </summary>
         /// <remarks>
@@ -114,13 +123,13 @@ namespace HuMengyang0130SkySharkWebApplication.LOB
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// ListBox1 control.
+        /// lstClass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ListBox1;
+        protected global::System.Web.UI.WebControls.ListBox lstClass;
 
         /// <summary>
         /// Label4 control.
@@ -139,15 +148,6 @@ namespace HuMengyang0130SkySharkWebApplication.LOB
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Calendar Cal1;
-
-        /// <summary>
-        /// btnNext control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnNext;
 
         /// <summary>
         /// WizardStep2 control.
@@ -177,13 +177,13 @@ namespace HuMengyang0130SkySharkWebApplication.LOB
         protected global::System.Web.UI.WebControls.Label Label6;
 
         /// <summary>
-        /// txtNO control.
+        /// txtTNo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNO;
+        protected global::System.Web.UI.WebControls.TextBox txtTNo;
 
         /// <summary>
         /// Label7 control.
@@ -276,6 +276,15 @@ namespace HuMengyang0130SkySharkWebApplication.LOB
         protected global::System.Web.UI.WebControls.TextBox txtDepTime;
 
         /// <summary>
+        /// WizardStep3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.WizardStep WizardStep3;
+
+        /// <summary>
         /// Label12 control.
         /// </summary>
         /// <remarks>
@@ -283,6 +292,15 @@ namespace HuMengyang0130SkySharkWebApplication.LOB
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label12;
+
+        /// <summary>
+        /// lblMessageStep3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMessageStep3;
 
         /// <summary>
         /// Label13 control.
@@ -319,23 +337,5 @@ namespace HuMengyang0130SkySharkWebApplication.LOB
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEMail;
-
-        /// <summary>
-        /// btnCreate control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCreate;
-
-        /// <summary>
-        /// btnCancle control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCancle;
     }
 }

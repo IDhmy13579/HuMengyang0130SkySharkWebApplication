@@ -68,9 +68,8 @@
                     <td>
                         <asp:Label ID="Label3" runat="server" Text="Departure Time"></asp:Label>
                     </td>
-                    <td>
-                        <asp:TextBox ID="txtDepartureTime" runat="server"></asp:TextBox>
-                        <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+                    <td><asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+                        <asp:TextBox ID="txtDepartureTime" runat="server"></asp:TextBox>(HH:MM)
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Departure Time Required" ControlToValidate="txtDepartureTime"></asp:RequiredFieldValidator>
@@ -91,9 +90,8 @@
                     <td>
                         <asp:Label ID="Label5" runat="server" Text="Arrival Time"></asp:Label>
                     </td>
-                    <td>
-                        <asp:TextBox ID="txtArrivalTime" runat="server"></asp:TextBox>
-                        <asp:Calendar ID="Calendar2" runat="server"></asp:Calendar>
+                    <td><asp:Calendar ID="Calendar2" runat="server"></asp:Calendar>
+                        <asp:TextBox ID="txtArrivalTime" runat="server"></asp:TextBox>(HH:MM)  
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Arrival Time Required" ControlToValidate="txtArrivalTime"></asp:RequiredFieldValidator>
@@ -182,3 +180,4 @@
         </div>
     </form>
 </asp:Content>
+//week 6

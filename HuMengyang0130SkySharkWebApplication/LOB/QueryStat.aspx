@@ -24,6 +24,11 @@
             height: 29px;
         }
     </style>
+     <style type="text/css">
+         .auto-style1 {
+             height: 20px;
+         }
+     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <form id="form1" runat="server">
@@ -74,9 +79,12 @@
                         <table>
                             <tr>
                                 <td colspan ="3">
-                                    <asp:Label ID="Label1" runat="server" Text="Enquire about the status of flights"></asp:Label></td>
-                                
+                                    <asp:Label ID="Label1" runat="server" Text="Enquire about the status of flights"></asp:Label></td>                          
                             </tr>
+                             <tr>
+                                <td colspan="2">
+                                <asp:Label ID="lblMessage" runat="server" Text="" Font-Bold="true" ForeColor="Red"></asp:Label></td>                                       
+                            </tr> 
                             <tr>
                                 <td class="auto-style2">
                                     <asp:Label ID="Label6" runat="server" Text="Flight Number"></asp:Label></td><td>
@@ -89,7 +97,7 @@
                                     <asp:Label ID="Label3" runat="server" Text="Class"></asp:Label>
                                 </td>
                                 <td class="auto-style1">
-                                    <asp:ListBox ID="ListBox1" runat="server">
+                                    <asp:ListBox ID="lstClass" runat="server">
                                         <asp:ListItem>Executive</asp:ListItem>
                                         <asp:ListItem>Business</asp:ListItem>
                                     </asp:ListBox>
@@ -109,9 +117,9 @@
                             </tr>
                             <tr>
                                 <td class="auto-style2"></td>
-                                <td></td>
+                                
                                 <td>
-                                    <asp:Button ID="btnSubmit1" runat="server" Text="Submit" BackColor="Silver" BorderColor="Blue" Font-Names="Microsoft Sans Serif" />
+                                    <asp:Button ID="btnQueryStatus" runat="server" Text="Query Status" BackColor="Silver" BorderColor="Blue" Font-Names="Microsoft Sans Serif" OnClick="btnQueryStatus_Click" />
                                 </td>
                                 <td></td>
                             </tr>
@@ -127,14 +135,19 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td>
+                    <td class="auto-style1"></td>
+                    <td class="auto-style1">
                         <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/ChangePassword.aspx">Changed Password</asp:HyperLink>
                     </td>
-                    <td>
+                    <td class="auto-style1">
                         <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Logoff.aspx">Logoff</asp:HyperLink>
                     </td>
-                </tr>               
+                </tr>    
+                <tr>
+                    <td>
+                        <asp:Label ID="lblTicketStatus" runat="server" Text="" Font-Bold="true" ForeColor="Red"></asp:Label>
+                    </td>                                       
+                </tr> 
                 <tr>
                     <td>
                         <asp:Label ID="Label5" runat="server" Text="Ticket No"></asp:Label>
@@ -148,7 +161,7 @@
                   <tr>
                     <td></td>
                     <td>
-                        <asp:Button ID="btnSubmit2" runat="server" Text="Submit" />
+                        <asp:Button ID="btnSubmit2" runat="server" Text="Submit" OnClick="btnSubmit2_Click" />
                       </td>
                     <td></td>
                 </tr>

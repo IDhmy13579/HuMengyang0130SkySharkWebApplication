@@ -19,51 +19,58 @@ namespace HuMengyang0130SkySharkWebApplication
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            if(Page.IsValid)
+            if (Page.IsValid)
             {
                 String username;
                 String password;
-                username=txtUserName.Text;
-                password=txtPassword.Text;
-                //get conntion
+                username = txtUserName.Text;
+                password = txtPassword.Text;
+                //get conntion 
                 SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ARPDatabaseConnectionString"].ConnectionString);
                 conn.Open();
-                //create dataadpter
-                string queryString = "Select Username,Password,Role from dtUsers where Username='" + username + "'";
+                //create dataadapter
+                string queryString = "Select UserName, Password,Role from dtUsers where Username='" + username + "'";
                 SqlDataAdapter adapter = new SqlDataAdapter();
-                //create command
-                adapter.SelectCommand =new SqlCommand(queryString, conn);
+
+                //create commnad
+                adapter.SelectCommand = new SqlCommand(queryString, conn);
 
                 DataSet ds1 = new DataSet();
-                adapter.Fill(ds1,"dtUsers");
-                if(ds1.Tables["dtusers"].Rows.Count == 0)
+                adapter.Fill(ds1, "dtUsers");
+
+                if (ds1.Tables["dtUsers"].Rows.Count == 0)
                 {
                     lblMessage.Text = "Invalid Username";
                 }
                 else
                 {
-                    if(ds1.Tables["dtUsers"].Rows[0][1].ToString().Trim() == txtPassword.Text.Trim())
+                    if (ds1.Tables["dtUsers"].Rows[0][1].ToString().Trim() == txtPassword.Text.Trim())
                     {
+                        // lblMessage.Text = "Welcome," + username;
                         String Role;
-                        Role = ds1.Tables["dtUsers"].Rows [0][2].ToString().Trim();
+                        Role = ds1.Tables["dtUsers"].Rows[0][2].ToString().Trim();
                         Session["usrName"] = username;
-                        Session["usrRole"] =Role;
-                        if(Role == "Disabled")
+                        Session["usrRole"] = Role;
+                        if (Role == "Disabled")
                         {
                             lblMessage.Text = "Your account has been disabled.Please contact the network Administrator";
                             return;
                         }
-                        switch(Role)
+                        switch (Role)
                         {
                             case "Admin":
-                                Response.Redirect(".\\NA\\ManageUser.aspx");
+                                Response.Redirect(".\\NA\\ManageUsers.aspx");
                                 break;
                             case "BM":
                                 Response.Redirect(".\\BM\\AddFI.aspx");
                                 break;
                             case "LOB":
-                                Response.Redirect(".\\LOB\\CreatRes.aspx");
+                                Response.Redirect(".\\LOB\\CreateRes.aspx");
                                 break;
+                            case "NA":
+                                Response.Redirect(".\\NA\\ManageUsers.aspx");
+                                break;
+
                         }
                     }
                     else
@@ -72,7 +79,7 @@ namespace HuMengyang0130SkySharkWebApplication
                     }
                 }
                 conn.Close();
-            }
+            }//end
         }
     }
 }

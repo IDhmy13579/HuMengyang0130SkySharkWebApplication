@@ -87,6 +87,15 @@ namespace HuMengyang0130SkySharkWebApplication.LOB
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
+        /// lblMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMessage;
+
+        /// <summary>
         /// Label6 control.
         /// </summary>
         /// <remarks>
@@ -114,13 +123,13 @@ namespace HuMengyang0130SkySharkWebApplication.LOB
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// ListBox1 control.
+        /// lstClass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ListBox1;
+        protected global::System.Web.UI.WebControls.ListBox lstClass;
 
         /// <summary>
         /// Label4 control.
@@ -141,13 +150,13 @@ namespace HuMengyang0130SkySharkWebApplication.LOB
         protected global::System.Web.UI.WebControls.Calendar CalDepDate;
 
         /// <summary>
-        /// btnSubmit1 control.
+        /// btnQueryStatus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSubmit1;
+        protected global::System.Web.UI.WebControls.Button btnQueryStatus;
 
         /// <summary>
         /// WizardStep2 control.
@@ -184,6 +193,15 @@ namespace HuMengyang0130SkySharkWebApplication.LOB
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink HyperLink4;
+
+        /// <summary>
+        /// lblTicketStatus control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTicketStatus;
 
         /// <summary>
         /// Label5 control.

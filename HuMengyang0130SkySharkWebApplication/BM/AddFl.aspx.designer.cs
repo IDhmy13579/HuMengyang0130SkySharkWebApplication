@@ -105,15 +105,6 @@ namespace HuMengyang0130SkySharkWebApplication.BM
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// txtDepartureTime control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDepartureTime;
-
-        /// <summary>
         /// Calendar1 control.
         /// </summary>
         /// <remarks>
@@ -121,6 +112,15 @@ namespace HuMengyang0130SkySharkWebApplication.BM
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Calendar Calendar1;
+
+        /// <summary>
+        /// txtDepartureTime control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtDepartureTime;
 
         /// <summary>
         /// RequiredFieldValidator2 control.
@@ -168,15 +168,6 @@ namespace HuMengyang0130SkySharkWebApplication.BM
         protected global::System.Web.UI.WebControls.Label Label5;
 
         /// <summary>
-        /// txtArrivalTime control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtArrivalTime;
-
-        /// <summary>
         /// Calendar2 control.
         /// </summary>
         /// <remarks>
@@ -184,6 +175,15 @@ namespace HuMengyang0130SkySharkWebApplication.BM
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Calendar Calendar2;
+
+        /// <summary>
+        /// txtArrivalTime control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtArrivalTime;
 
         /// <summary>
         /// RequiredFieldValidator4 control.

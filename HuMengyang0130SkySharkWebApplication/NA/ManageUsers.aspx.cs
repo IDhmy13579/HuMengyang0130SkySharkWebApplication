@@ -38,7 +38,7 @@ namespace HuMengyang0130SkySharkWebApplication.NA
             if(ds1.Tables["dtUsers"].Rows.Count == 0)
             {
                 //insert
-                string insertQueryString = "INSERT INTO [dtUsers] ([Username],[Password],[Role] VALUES ('" + username + "'，'" + password + "','" + role + "')";
+                string insertQueryString = "INSERT INTO [dtUsers] ([Username], [Password], [Role],PasswordChanged) VALUES ('" + username + "','" + password + "','" + role + "', 'True' )";
                 SqlCommand insertCommand = new SqlCommand(insertQueryString, conn);
                 insertCommand.ExecuteNonQuery();
             }
